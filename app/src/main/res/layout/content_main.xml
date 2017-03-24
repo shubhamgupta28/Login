@@ -12,7 +12,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:weightSum="1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="loginScreen.solution.example.com.loginScreen.MainActivity">
+    tools:context="loginScreen.solution.example.com.loginScreen.MainActivity
+">
 
     <LinearLayout
         android:id="@+id/lt_buttons"
@@ -41,90 +42,9 @@
             android:text="Sign Up" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/lt_name"
+    <FrameLayout
+        android:id="@+id/mainActivityFrameLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="40dp"
-        android:visibility="invisible">
+        android:layout_height="match_parent"></FrameLayout>
 
-        <EditText
-            android:id="@+id/et_name"
-            style="@style/EditText"
-            android:layout_height="wrap_content"
-            android:hint="Name"
-            android:layout_width="match_parent" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lt_common"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/et_email"
-            style="@style/EditText"
-            android:layout_width="match_parent"
-            android:hint="Email"
-            android:inputType="textEmailAddress"/>
-
-        <EditText
-            android:id="@+id/et_password"
-            style="@style/EditText"
-            android:layout_width="match_parent"
-            android:layout_marginTop="20dp"
-            android:hint="Password"
-            android:inputType="textPassword"/>
-    </LinearLayout>
-
-    <ViewFlipper
-        android:id="@+id/view_flipper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:animateFirstView="true">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/bt_sign_in"
-                style="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-
-                android:allowUndo="true"
-                android:background="#CC5ec639"
-                android:text="Sign In" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/et_phone"
-                style="@style/EditText"
-                android:layout_width="match_parent"
-                android:layout_marginTop="20dp"
-                android:ems="10"
-                android:hint="Contact Number"
-                android:inputType="phone"/>
-
-            <Button
-                android:id="@+id/bt_create"
-                style="bold"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:background="#CC5ec639"
-                android:text="Create Account" />
-        </LinearLayout>
-
-    </ViewFlipper>
 </LinearLayout>
