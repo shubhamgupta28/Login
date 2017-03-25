@@ -60,13 +60,6 @@ public class SignUpFragment extends Fragment {
 
             }
         });
-
-
-
-
-
-
-
         return rootView;
 
     }
@@ -79,12 +72,4 @@ public class SignUpFragment extends Fragment {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
-//
-//    // validating password with retype password
-//    private boolean isValidPassword(String pass) {
-//        if (pass != null && pass.length() > 6) {
-//            return true;
-//        }
-//        return false;
-//    }
 }
